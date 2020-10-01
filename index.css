@@ -1,0 +1,150 @@
+:root {
+    --grid-size: 420px;
+}
+
+body {
+    background: gold;
+    font-family: 'VT323', monospace;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--grid-size);
+    height: var(--grid-size);
+    border: solid black;
+    background: black;
+    margin: 0 auto;
+}
+
+.grid div {
+    width: 15px;
+    height: 15px;   
+}
+
+.header {
+    text-align: center;
+}
+
+.header img {
+    max-height: 100px;
+}
+
+.game-info {
+    margin: 0 auto;
+    width: var(--grid-size);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+#game-state {
+    margin: 0px;
+    font-size: 3rem;
+}
+
+#start {
+    margin: 0 auto;
+    display: block;
+    padding: 0 15px 0 15px;
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    background: plum;
+}
+
+.pac-dot {
+    background-color: yellow;
+    border: 6px solid black;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.wall-left {
+    border-left: 1px solid blue;
+}
+
+.wall-top {
+    border-top: 1px solid blue;
+}
+
+.wall-right {
+    border-right: 1px solid blue;
+}
+
+.wall-bottom {
+    border-bottom: 1px solid blue;
+}
+
+.power-pellet {
+    background-color: peachpuff;
+    border-radius: 7.5px;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.pacman {
+    background-image: url("./img/pacman-pixel-right.png");
+    background-size: cover;
+}
+
+.left {
+    background-image: url("./img/pacman-pixel-left.png");
+}
+.right {
+    background-image: url("./img/pacman-pixel-right.png");
+}
+.up {
+    background-image: url("./img/pacman-pixel-up.png");
+}
+.down {
+    background-image: url("./img/pacman-pixel-down.png");
+}
+
+.red {
+    background-image: url("./img/red-ghost.png");
+    background-size: cover;
+}
+
+.orange {
+    background-image: url("./img/orange-ghost.png");
+    background-size: cover;
+}
+
+.pink {
+    background-image: url("./img/pink-ghost.png");
+    background-size: cover;
+}
+
+.blue {
+    background-image: url("./img/blue-ghost.png");
+    background-size: cover;
+}
+
+.override-bg {
+    background-color: black;
+    border: none;
+    border-radius: 0px;
+}
+
+.scared-ghost {
+    background-image: url("./img/scared-ghost.png");
+    background-size: cover;
+}
+
+#ready-state {
+    text-transform: uppercase;
+    color: gold;
+    font-size: 1.7rem;
+}
+
+#sound {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
